@@ -20,6 +20,10 @@ public class Main {
             switch (opcion) {
                 case 1 -> {
                     Tarjeta tarjeta = auxiliarBancario.crearTarjeta();
+                    if (tarjeta != null) {
+                        JOptionPane.showMessageDialog(null, "Creación de tarjeta concluye exitosamente\n" +
+                                "Cliente: " + tarjeta.getNombreTitular() + "\nNúmero de tarjeta: " + tarjeta.getPan());
+                    }
                 }
                 case 2 -> auxiliarBancario.asociarcuentaATarjeta();
                 case 3 -> JOptionPane.showMessageDialog(null, "Saliendo...\nTenga un buen día");

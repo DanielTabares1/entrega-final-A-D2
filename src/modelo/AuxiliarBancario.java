@@ -30,8 +30,11 @@ public class AuxiliarBancario extends Persona {
 
     public Tarjeta crearTarjeta() {
         ControladorCrearTarjeta crearTarjeta = new ControladorCrearTarjeta();
-        Tarjeta tarjeta = crearTarjeta.registrarTarjeta();
-        return tarjeta;
+        if(crearTarjeta.apto()){
+            Tarjeta tarjeta = crearTarjeta.registrarTarjeta();
+            return tarjeta;
+        }
+        return null;
     }
 
     public void asociarcuentaATarjeta() {

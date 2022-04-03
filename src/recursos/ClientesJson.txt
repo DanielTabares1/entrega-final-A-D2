@@ -1,2 +1,2 @@
-{"nombre":"Daniel","id":"12345","fechaNacimiento":"2001-10-13","correoElectronico":"daniel@mail.com","telefono":"123456","direccion":"enriqueSegoviano","ingresosMensuales":500}
-{"nombre":"Jaime","id":"123123","fechaNacimiento":"1999-08-08","correoElectronico":"jaime@mail.com","telefono":"555555","direccion":"calle #","ingresosMensuales":650}
+{"nombre":"Daniel","id":"12345","fechaNacimiento":"2001-10-13","correoElectronico":"daniel@mail.com","telefono":"123456","direccion":"enriqueSegoviano","ingresosMensuales":50000}
+{"nombre":"Jaime","id":"123123","fechaNacimiento":"1999-08-08","correoElectronico":"jaime@mail.com","telefono":"555555","direccion":"calle #","ingresosMensuales":20000}
