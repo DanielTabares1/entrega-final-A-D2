@@ -19,7 +19,16 @@ public class ControladorAsociarCuentaATarjeta {
         this.panTarjeta = JOptionPane.showInputDialog("Digite el número de su tarjeta");
         this.tarjeta = capturarTarjeta(this.panTarjeta);
         this.cuenta = capturarCuenta(this.numeroDeCuenta);
+
+        if (this.cuenta == null || this.tarjeta == null) {
+            JOptionPane.showMessageDialog(null, "La cuenta o Tarjeta solicitada no existe.");
+            return;
+        } else if (!this.cuenta.getTipoCuenta().equals(this.tarjeta.getTipo())) {
+            JOptionPane.showMessageDialog(null, "Tipo de cuenta y tarjeta no compatibles.");
+            return;
+        }
         asociarCuentaATarjeta();
+        JOptionPane.showMessageDialog(null, "Tarjeta y cuenta asociadas con éxito.");
     }
 
     private Cuenta capturarCuenta(String numeroDeCuenta) {

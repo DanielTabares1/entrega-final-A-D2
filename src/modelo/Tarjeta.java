@@ -98,6 +98,10 @@ public class Tarjeta {
         this.numeroCuenta = numeroCuenta;
     }
 
+    public String getTipo() {
+        return tipo;
+    }
+
     //método auxiliar para asignar los números
     //en un banco real tiene otra lógica de negocio
 

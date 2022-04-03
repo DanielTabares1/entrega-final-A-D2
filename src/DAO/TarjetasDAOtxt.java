@@ -68,7 +68,6 @@ public class TarjetasDAOtxt implements TarjetasDAO {
                 }
                 tarjetas.add(tarjeta1);
                 tarjetaJson = reader1.readLine();
-                System.out.println("Añadimos tarjeta");
             }
             reader.close();
 
@@ -79,7 +78,6 @@ public class TarjetasDAOtxt implements TarjetasDAO {
             PrintWriter writer2 = new PrintWriter(writer1);
             for (Tarjeta t : tarjetas) {
                 writer2.println(gson.toJson(t));
-                System.out.println("re escribimos tarjeta");
             }
             writer2.flush();
         } catch (IOException e) {

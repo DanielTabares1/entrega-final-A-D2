@@ -1,1 +1,1 @@
-{"idTitular":"12345","nombreTitular":"Daniel","pan":"5342515808473505","bin":"534251","iai":"580847350","check":"5","pin":"1111","cvv":"672","fechaExpedicion":"2022-04-03","fechaCaducidad":"2027-04-03","tipo":"credito","marca":"visa","estado":"Activo"}
+{"idTitular":"12345","nombreTitular":"Daniel","pan":"5342515808473505","bin":"534251","iai":"580847350","check":"5","pin":"1111","cvv":"672","fechaExpedicion":"2022-04-03","fechaCaducidad":"2027-04-03","tipo":"credito","marca":"visa","numeroCuenta":"1414141414","estado":"Activo"}

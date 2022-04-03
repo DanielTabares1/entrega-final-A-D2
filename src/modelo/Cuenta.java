@@ -10,4 +10,8 @@ public class Cuenta {
     public String getNumeroDeCuenta() {
         return numeroDeCuenta;
     }
+
+    public String getTipoCuenta() {
+        return tipoCuenta;
+    }
 }
