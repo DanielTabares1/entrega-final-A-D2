@@ -8,4 +8,6 @@ public interface TarjetasDAO {
 
     Tarjeta buscarTarjeta(String panTarjeta);
 
+    void actualizarTarjeta(Tarjeta tarjeta);
+
 }

@@ -5,6 +5,7 @@ import modelo.AuxiliarBancario;
 import modelo.Tarjeta;
 
 import java.io.*;
+import java.util.ArrayList;
 
 public class TarjetasDAOtxt implements TarjetasDAO {
 
@@ -51,5 +52,38 @@ public class TarjetasDAOtxt implements TarjetasDAO {
             System.err.println("Archivo no encontrado");
         }
         return null;
+    }
+
+    @Override
+    public void actualizarTarjeta(Tarjeta tarjeta) {
+        ArrayList<Tarjeta> tarjetas = new ArrayList<>();
+        try {
+            FileReader reader = new FileReader("src/recursos/TarjetasJson.txt");
+            BufferedReader reader1 = new BufferedReader(reader);
+            String tarjetaJson = reader1.readLine();
+            while (tarjetaJson != null) {
+                Tarjeta tarjeta1 = gson.fromJson(tarjetaJson, Tarjeta.class);
+                if (tarjeta1.getPan().equals(tarjeta.getPan())) {
+                    tarjeta1.setNumeroCuenta(tarjeta.getNumeroCuenta());
+                }
+                tarjetas.add(tarjeta1);
+                tarjetaJson = reader1.readLine();
+                System.out.println("Añadimos tarjeta");
+            }
+            reader.close();
+
+            FileWriter writer = new FileWriter("src/recursos/TarjetasJson.txt", false);
+            writer.write("");
+            writer = new FileWriter("src/recursos/TarjetasJson.txt", true);
+            BufferedWriter writer1 = new BufferedWriter(writer);
+            PrintWriter writer2 = new PrintWriter(writer1);
+            for (Tarjeta t : tarjetas) {
+                writer2.println(gson.toJson(t));
+                System.out.println("re escribimos tarjeta");
+            }
+            writer2.flush();
+        } catch (IOException e) {
+            System.err.println("Archivo no encontrado");
+        }
     }
 }

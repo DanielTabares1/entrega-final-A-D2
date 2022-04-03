@@ -1,4 +1,4 @@
 {"idPropietario":"12345","numeroDeCuenta":"5555555555","fechaCreacion":"2020-10-10","TipoCuenta":"debito"}
 {"idPropietario":"67890","numeroDeCuenta":"1414141414","fechaCreacion":"2020-10-10","TipoCuenta":"credito"}
 {"idPropietario":"123456","numeroDeCuenta":"1212121212","fechaCreacion":"2020-10-10","TipoCuenta":"credito"}
-{"idPropietario":"123123","numeroDeCuenta":"1234512345","fechaCreacion":"2020-10-10","TipoCuenta":"debito"}
+{"idPropietario":"123123","numeroDeCuenta":"1234512345","fechaCreacion":"2020-10-10","TipoCuenta":"credito"}

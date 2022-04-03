@@ -34,9 +34,8 @@ public class AuxiliarBancario extends Persona {
         return tarjeta;
     }
 
-    public void asociarcuentaATarjeta(){
+    public void asociarcuentaATarjeta() {
         ControladorAsociarCuentaATarjeta asociarCuentaATarjeta = new ControladorAsociarCuentaATarjeta();
-
     }
 
 
